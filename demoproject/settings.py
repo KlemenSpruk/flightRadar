@@ -115,9 +115,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+"""Static files mapping"""
 STATICFILES_DIRS = [
     os.path.join(os.path.join(BASE_DIR + '/flightmap', 'static'))
 ]
 
+"""Open Sky API url"""
 OPENSKY_URL = 'https://opensky-network.org/api/states/all?lamin=' \
               '45.118103&lomin=12.766113&lamax=47.430725&lomax=17.308960'

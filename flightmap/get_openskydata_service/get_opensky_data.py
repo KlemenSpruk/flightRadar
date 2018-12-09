@@ -3,6 +3,10 @@ from django.conf import settings
 
 
 def get_data():
+    """
+    Returns formatted open-sky api data
+    :return: Geojson python dict object
+    """
     data = get(settings.OPENSKY_URL)
     geojson_dict = {
         "type": "FeatureCollection",

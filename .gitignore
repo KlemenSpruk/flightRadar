@@ -1,0 +1,4 @@
+venv
+*.sqlite3
+demoproject/__pycache__/
+flightmap/__pycache__/

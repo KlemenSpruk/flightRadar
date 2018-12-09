@@ -12,9 +12,10 @@ def index(request):
     return render(request, 'flightmap/index.html')
 
 
-def flightdata():
+def flightdata(request):
     """
     Returns opensky-net flight radar data
+    :param request: Request
     :return:
     """
     return JsonResponse(get_data())
